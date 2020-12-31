@@ -1,8 +1,9 @@
 #imports libary needed to access photo
 from PIL import Image
 
-#Opens and loads the image that it processes
+#Opens and loads the image that it processes you have to change this to what your picture is called.
 money = Image.open("money.png")
+
 money = money.convert("RGBA")
 pixels = money.load()
 
@@ -18,4 +19,4 @@ for a in range(0,width):
             pixels[a,b] = (255,192,203,255)
             
 #saves the image
-money.save("money.png")
+money.save("pinkbackgroundedmoney.png")
